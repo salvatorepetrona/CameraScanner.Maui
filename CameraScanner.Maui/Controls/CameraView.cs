@@ -1,6 +1,8 @@
 ﻿using System.Windows.Input;
 using Microsoft.Maui.Graphics.Platform;
 using Timer = System.Timers.Timer;
+using Microsoft.Maui.ApplicationModel;
+using Microsoft.Maui.Devices;
 
 namespace CameraScanner.Maui
 {

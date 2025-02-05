@@ -1,6 +1,7 @@
 using System.Windows.Input;
 using CameraScanner.Maui.Utils;
 using Microsoft.Maui.Graphics.Text;
+using Microsoft.Maui.ApplicationModel;
 
 namespace CameraScanner.Maui.Controls
 {

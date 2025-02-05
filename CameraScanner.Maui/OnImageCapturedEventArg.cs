@@ -1,4 +1,5 @@
 using Microsoft.Maui.Graphics.Platform;
+using Microsoft.Maui.ApplicationModel;
 
 namespace CameraScanner.Maui
 {

@@ -12,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Graphics.Platform;
 using UIKit;
 using Vision;
+using Microsoft.Maui.Devices;
+using Microsoft.Maui.ApplicationModel;
 
 namespace CameraScanner.Maui
 {

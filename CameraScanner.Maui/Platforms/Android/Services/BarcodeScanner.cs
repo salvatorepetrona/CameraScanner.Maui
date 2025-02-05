@@ -13,6 +13,9 @@ using Paint = Android.Graphics.Paint;
 using Point = Microsoft.Maui.Graphics.Point;
 using RectF = Microsoft.Maui.Graphics.RectF;
 using System.Linq;
+using Microsoft.Maui.Storage;
+using Microsoft.Maui.ApplicationModel.Communication;
+using Microsoft.Maui.ApplicationModel;
 
 namespace CameraScanner.Maui.Platforms.Services
 {

@@ -6,6 +6,9 @@ using CameraScanner.Maui;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
+using Microsoft.Maui.ApplicationModel.DataTransfer;
+using Microsoft.Maui.Media;
+using Microsoft.Maui.ApplicationModel;
 
 namespace CameraDemoApp
 {

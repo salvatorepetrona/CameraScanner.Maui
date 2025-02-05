@@ -1,4 +1,5 @@
-﻿
+﻿using Microsoft.Maui.Storage;
+
 namespace CameraScanner.Maui
 {
     public interface IBarcodeScanner

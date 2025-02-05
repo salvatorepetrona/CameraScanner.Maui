@@ -8,7 +8,7 @@ namespace CameraScanner.Maui
     [Preserve(AllMembers = true)]
     internal class BarcodeAnalyzer : AVCaptureVideoDataOutputSampleBufferDelegate
     {
-        // private readonly ILogger logger;
+        private readonly ILogger logger;
         private readonly CameraManager cameraManager;
 
         private uint? skippedFrames;
@@ -18,7 +18,7 @@ namespace CameraScanner.Maui
             ILogger<BarcodeAnalyzer> logger,
             CameraManager cameraManager)
         {
-            // this.logger = logger;
+            this.logger = logger;
             this.cameraManager = cameraManager;
         }
 
@@ -45,7 +45,7 @@ namespace CameraScanner.Maui
 
                 if (this.BarcodeDetectionFrameRate is not uint r || r is 0u or 1u || this.skippedFrames == null || ++this.skippedFrames >= r)
                 {
-                    // this.logger.LogDebug("DidOutputSampleBuffer");
+                    this.logger.LogDebug("DidOutputSampleBuffer");
 
                     if (this.cameraManager.CaptureNextFrame)
                     {
@@ -79,12 +79,12 @@ namespace CameraScanner.Maui
                 }
                 else
                 {
-                    // this.logger.LogDebug("DidOutputSampleBuffer -> frame skipped");
+                     this.logger.LogDebug("DidOutputSampleBuffer -> frame skipped");
                 }
             }
             catch (Exception ex)
             {
-                // this.logger.LogError(ex, "DidOutputSampleBuffer failed with exception");
+                 this.logger.LogError(ex, "DidOutputSampleBuffer failed with exception");
             }
             finally
             {
@@ -94,7 +94,7 @@ namespace CameraScanner.Maui
                 }
                 catch (Exception ex)
                 {
-                    // this.logger.LogError(ex, "DidOutputSampleBuffer -> CMSampleBuffer.Dispose failed with exception");
+                     this.logger.LogError(ex, "DidOutputSampleBuffer -> CMSampleBuffer.Dispose failed with exception");
                     // MainThread.BeginInvokeOnMainThread(() => this.cameraManager.Start());
                 }
             }

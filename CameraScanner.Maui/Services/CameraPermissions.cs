@@ -1,4 +1,5 @@
-﻿namespace CameraScanner.Maui
+﻿using Microsoft.Maui.ApplicationModel;
+namespace CameraScanner.Maui
 {
     public class CameraPermissions : ICameraPermissions
     {

@@ -9,6 +9,9 @@ using Microsoft.Maui.Graphics.Platform;
 using Microsoft.Maui.Platform;
 using UIKit;
 using Vision;
+using Microsoft.Maui.Devices;
+using Microsoft.Maui.Storage;
+using Microsoft.Maui.ApplicationModel;
 
 namespace CameraScanner.Maui.Platforms.Services
 {

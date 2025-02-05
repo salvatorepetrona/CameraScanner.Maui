@@ -1,6 +1,7 @@
 ﻿using NLog.Config;
 using NLog.Targets;
 using LogLevel = NLog.LogLevel;
+using Microsoft.Maui.ApplicationModel;
 
 namespace CameraDemoApp.Services.Logging
 {
